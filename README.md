@@ -329,7 +329,7 @@ Below, I've included a list of interesting courses I took at UIUC and some examp
 - [Machine Learning for Signal Processing](#machine-learning-for-signal-processing)
 - [Deep Learning for Computer Vision](#deep-learning-for-computer-vision)
 - [Computational Photography](#computational-photography)
-- [Real-World Algorithms for IoT & Data Science](#real-world-algorithms-for-iot-data-science)
+- [Real-World Algorithms for IoT & Data Science](#real-world-algorithms-for-iot-&-data-science)
 - [Generative AI](#generative-ai)
 - [Data Mining](#data-mining)
 
