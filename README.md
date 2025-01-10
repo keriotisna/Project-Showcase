@@ -7,7 +7,13 @@ I'm a recent graduate of UIUC's MCS Master's program of Computer Science with a 
 # Projects Showcase
 ---
 
-During my time at UIUC, I had the opportunity to lead several different projects which developed my skills in backend data-focused domains like machine learning, database systems, and backend API development. I have listed several of my major projects below, each of which contains a brief description of some interesting challenges I had to tackle when completing them.
+During my time at UIUC, I had the opportunity to lead several different projects which developed my skills in backend data-focused domains like machine learning, database systems, and backend API development. I have listed several of my major projects below, each of which contains a brief description of some interesting challenges I had to tackle when completing them. 
+
+**Major Projects**
+
+- [Electric Vehicle Trip Planner](#electric-vehicle-trip-planner)
+- [Explainable Real vs GAN Face Discrimination](#explainable-real-vs-gan-face-discrimination)
+
 
 ## Electric Vehicle Trip Planner
 ---
