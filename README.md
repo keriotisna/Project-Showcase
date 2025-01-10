@@ -4,7 +4,7 @@
 
 I'm a recent graduate of UIUC's MCS Master's program of Computer Science with a keen interest in software development with a focus in data-heavy fields like machine learning, data science, and database systems. Throughout my education, I've gained a variety of skills and experiences that bolstered my software development, leadership, and presentation skills that enable me to tackle even the toughest challenges.
 
-Check out some of the [projects](projects-showcase) I've done and the [courses](courses) I've taken at UIUC below!
+Check out some of the [projects](#projects-showcase) I've done and the [courses](#courses) I've taken at UIUC below!
 
 # Projects Showcase
 ---
@@ -15,9 +15,9 @@ During my time at UIUC, I had the opportunity to lead several different projects
 
 - [Electric Vehicle Trip Planner](#electric-vehicle-trip-planner)
 - [Explainable Real vs GAN Face Discrimination](#explainable-real-vs-gan-face-discrimination)
-- [CIFAR-10 Benchmarking](cifar-10-benchmarking)
-- [Paint by Numbers Generator](paint-by-numbers-generator)
-- [Stylized Handwriting Generation](stylized-handwriting-generation)
+- [CIFAR-10 Benchmarking](#cifar-10-benchmarking)
+- [Paint by Numbers Generator](#paint-by-numbers-generator)
+- [Stylized Handwriting Generation](#stylized-handwriting-generation)
 
 
 ## Electric Vehicle Trip Planner
@@ -323,15 +323,15 @@ Below, I've included a list of interesting courses I took at UIUC and some examp
 
 **Courses List**
 
-- [Database Systems](database-systems)
-- [Applied Machine Learning](applied-machine-learning)
-- [Computer Vision](computer-vision)
-- [Machine Learning for Signal Processing](machine-learning-for-signal-processing)
-- [Deep Learning for Computer Vision](deep-learning-for-computer-vision)
-- [Computational Photography](computational-photography)
-- [Real-World Algorithms for IoT & Data Science](real-world-algorithms-for-iot-data-science)
-- [Generative AI](generative-ai)
-- [Data Mining](data-mining)
+- [Database Systems](#database-systems)
+- [Applied Machine Learning](#applied-machine-learning)
+- [Computer Vision](#computer-vision)
+- [Machine Learning for Signal Processing](#machine-learning-for-signal-processing)
+- [Deep Learning for Computer Vision](#deep-learning-for-computer-vision)
+- [Computational Photography](#computational-photography)
+- [Real-World Algorithms for IoT & Data Science](#real-world-algorithms-for-iot-data-science)
+- [Generative AI](#generative-ai)
+- [Data Mining](#data-mining)
 
 ## Database Systems
 ---
