@@ -27,11 +27,9 @@ My role as leader was to guide the project's overall direction by keeping track 
 The entire application is deployed and hosted on GCP with the frontend being accessible here (as long as I have free GCP credits remaining).
 https://team087-frontend-410247726474.us-central1.run.app
 
-![[attachments/heatmap 2.gif]]
-- An example of the heatmap visualizations I did the backend calculations & queries for to visualize traffic congestion around different EV charging stations.
+!(attachments/heatmap%202.gif)[attachments/heatmap%202.gif]- An example of the heatmap visualizations I did the backend calculations & queries for to visualize traffic congestion around different EV charging stations.
 
-![[attachments/Pasted image 20250107155633.png]]
-- The final Entity Relationship diagram for our database.
+!(attachments/Pasted%20image%2020250107155633.png)[attachments/Pasted%20image%2020250107155633.png]- The final Entity Relationship diagram for our database.
 
 **Optimizing Database Performance**
 
@@ -39,8 +37,7 @@ Database performance was a large concern for our group, as we often needed to co
 
 Since indexes in MySQL are implemented with B-trees, we can leverage the fast lookups they provide by performing `BETWEEN` query operations. The `BETWEEN` operator is extremely fast with B-trees since we can easily iterate over leaf nodes after finding the appropriate starting point in the tree.
 
-![[attachments/Pasted image 20250109165504.png]]
-- If we want to use a `BETWEEN` operator here to find people between ages of 20-70, we can efficiently navigate to the 20 leaf node, then iterate the leaf blocks until we find a record that is 71 or higher since indexes are always ordered.
+!(attachments/Pasted%20image%2020250109165504.png)[attachments/Pasted%20image%2020250109165504.png]- If we want to use a `BETWEEN` operator here to find people between ages of 20-70, we can efficiently navigate to the 20 leaf node, then iterate the leaf blocks until we find a record that is 71 or higher since indexes are always ordered.
 
 ```MySQL
 WHERE
@@ -160,8 +157,7 @@ DELIMITER ;
 GitHub Repository
 https://github.com/MarkBauer5/3-best-friends
 
-![[attachments/Pasted image 20250108152359.png]]
-- Can you tell which images are real?
+!(attachments/Pasted%20image%2020250108152359.png)[attachments/Pasted%20image%2020250108152359.png]- Can you tell which images are real?
 
 With the ever growing capabilities of generative AI, it can be hard to tell truth from fiction, as deep-fake images and videos become more realistic and prevalent. To help solve this problem in an explainable way, I led a team of graduate students in implementing a series of deep learning models capable of identifying AI generated from real human faces and utilized the GradCAM library to visualize what parts of an AI image to look for when trying to find these deep-fake images. Our models proved quite effective, achieving nearly 97% accuracy on the test set.
 
@@ -169,21 +165,17 @@ With the ever growing capabilities of generative AI, it can be hard to tell trut
 
 To achieve our goals for this project, we tested several custom and pre-defined architectures shown below.
 
-![[attachments/Pasted image 20250108150754.png]]
-- A diagram of our residual pooling layer. This layer incorporates the popular residual connection as introduced in the [ResNet Paper](https://arxiv.org/abs/1512.03385) with the ability to downsample the incoming features while still retaining the residual connection. We achieve this by performing a standard max pooling operation (gray) and a learned downsampling function (blue). These two feature activations are then added and normalized to produce a downsampled feature map (blue-gray) which maintains a residual connection to previous layers allowing for longer gradient propagation.
+!(attachments/Pasted%20image%2020250108150754.png)[attachments/Pasted%20image%2020250108150754.png]- A diagram of our residual pooling layer. This layer incorporates the popular residual connection as introduced in the [ResNet Paper](https://arxiv.org/abs/1512.03385) with the ability to downsample the incoming features while still retaining the residual connection. We achieve this by performing a standard max pooling operation (gray) and a learned downsampling function (blue). These two feature activations are then added and normalized to produce a downsampled feature map (blue-gray) which maintains a residual connection to previous layers allowing for longer gradient propagation.
 
-![[attachments/1_o3mKhG3nHS-1dWa_plCeFw.png]]
-- Another feature we implement are spatially separable convolutions. Instead of performing a 3x3 convolution, we separate it into a 3x1 and a 1x3 convolution which is more efficient computationally. This enables our models to train faster with similar performance.
+!(attachments/1_o3mKhG3nHS-1dWa_plCeFw.png)[attachments/1_o3mKhG3nHS-1dWa_plCeFw.png]- Another feature we implement are spatially separable convolutions. Instead of performing a 3x3 convolution, we separate it into a 3x1 and a 1x3 convolution which is more efficient computationally. This enables our models to train faster with similar performance.
 
 **SWIN and ViT Benchmarking**
 
-![[attachments/swin_transformer_architecture.png]]
-- We also test and examine both the [SWIN](https://arxiv.org/abs/2103.14030) and [ViT](https://arxiv.org/abs/2010.11929) architectures and compare their performance to our custom models.
+!(attachments/swin_transformer_architecture.png)[attachments/swin_transformer_architecture.png]- We also test and examine both the [SWIN](https://arxiv.org/abs/2103.14030) and [ViT](https://arxiv.org/abs/2010.11929) architectures and compare their performance to our custom models.
 
 **GradCAM Visualizations**
 
-![[attachments/gradcam++_cam.png]]
-- GradCAM visualizations showing what part of the image each layer looks at most. This is an AI generated image, and in the 3rd layer, we see the model pays attention to the eyes and mouth which may be an indicator of a deep-fake image.
+!(attachments/gradcam++_cam.png)[attachments/gradcam++_cam.png]- GradCAM visualizations showing what part of the image each layer looks at most. This is an AI generated image, and in the 3rd layer, we see the model pays attention to the eyes and mouth which may be an indicator of a deep-fake image.
 
 ## CIFAR-10 Benchmarking 
 ---
@@ -197,17 +189,14 @@ https://github.com/keriotisna/CS-444-Final-Project
 
 In this project, I implemented a variety of custom model architectures and benchmarked their performance on the popular CIFAR-10 dataset which is a 10-way classification dataset on low resolution 32x32 images. This was actually my first project involving computer vision models, but I had enough general knowledge of deep learning theory and PyTorch to try implementing my own architectures to see how they would perform under different data augmentation regimes. Some architectures I implemented include bottleneck blocks and my own custom branch blocks. In addition to model experimentation, I also performed a substantial amount of hyperparameter searching, including trying different optimizer hyperparameters as well as a variety of different data augmentation techniques.
 
-![[attachments/CIFAR-10-dataset-Activeloop-Platform-visualization-image-1.webp]]
-- A subset of the CIFAR-10 dataset. There are a total of 10 different classes with each image having a 32x32 resolution.
+!(attachments/CIFAR-10-dataset-Activeloop-Platform-visualization-image-1.webp)[attachments/CIFAR-10-dataset-Activeloop-Platform-visualization-image-1.webp]- A subset of the CIFAR-10 dataset. There are a total of 10 different classes with each image having a 32x32 resolution.
 
 **Custom Model Architectures**
 
-![[attachments/Screen_Shot_2020-06-07_at_2.12.02_PM.png]]
-- An example of the bottleneck block, a layer designed to improve computational efficiency by condensing the number of channels a feature map has with a 1x1 convolution before doing the more expensive 3x3 convolution. Channels are then decompressed back to the original channel count with a second 1x1 convolution.
+!(attachments/Screen_Shot_2020-06-07_at_2.12.02_PM.png)[attachments/Screen_Shot_2020-06-07_at_2.12.02_PM.png]- An example of the bottleneck block, a layer designed to improve computational efficiency by condensing the number of channels a feature map has with a 1x1 convolution before doing the more expensive 3x3 convolution. Channels are then decompressed back to the original channel count with a second 1x1 convolution.
 
 
-![[attachments/530401b46f5ff06f0b2af8b6ba33eddcbde1844d.png]]
-- The "branch block", a block which splits computation for a network's forward pass into multiple parallel branches which are then recombined with a residual connection. This serves to create a kind of ensemble model within a larger network.
+!(attachments/530401b46f5ff06f0b2af8b6ba33eddcbde1844d.png)[attachments/530401b46f5ff06f0b2af8b6ba33eddcbde1844d.png]- The "branch block", a block which splits computation for a network's forward pass into multiple parallel branches which are then recombined with a residual connection. This serves to create a kind of ensemble model within a larger network.
 
 ## Paint by Numbers Generator
 ---
@@ -222,8 +211,7 @@ https://github.com/ethan-grinberg/paint-by-number
 
 A Paint by Numbers (PBN) is a type of coloring activity where someone is given a black and white image with outlines and a key indicating which colors go where. While these can be fun to do, it can be hard to find good pieces to do them on. In this project, I worked with a team of 2 other students to automate the PBN generation process using several image processing techniques in python. My role in this project focused on the core backend algorithms which would generate these PBN images which are described in more detail below.
 
-![[attachments/Pasted image 20250108163654.png]]
-- A completed example Paint by Numbers image of a red panda. 
+!(attachments/Pasted%20image%2020250108163654.png)[attachments/Pasted%20image%2020250108163654.png]- A completed example Paint by Numbers image of a red panda. 
 
 The process of making a PBN sounds simple at first, but is actually a fairly complicated and involved process. The entire process is broken down into 3 main steps, all of which I implemented.
 
@@ -239,27 +227,21 @@ The end goal of a PBN is to have a realistic looking image that is fun to fill i
 
 Once we pre-process the image, we need to reduce the number of colors in the image. A normal picture may have hundreds of thousands of potential colors in it, and we need to reduce it to only 10-20 while keeping the image similar in appearance. I achieved this by clustering on the RGB pixel values to produce a smaller number of dominant colors in the image. 
 
-![[attachments/Pasted image 20250108173259.png]]
-![[attachments/Pasted image 20250108173317.png]]
-- In these examples, clustering was done on the El Capitan shown above on each RGB pixel value. By doing this and plotting all the pixels in 3D, we can see there are 3-4 main colors in the image.
+!(attachments/Pasted%20image%2020250108173259.png)[attachments/Pasted%20image%2020250108173259.png]!(attachments/Pasted%20image%2020250108173317.png)[attachments/Pasted%20image%2020250108173317.png]- In these examples, clustering was done on the El Capitan shown above on each RGB pixel value. By doing this and plotting all the pixels in 3D, we can see there are 3-4 main colors in the image.
 
 **Cluster Pruning**
 
 After clustering and quantizing our image to a few different colors, we still have a major problem. There can still be hundreds of thousands of tiny clusters that are only a few pixels large which can make completing a PBN impossibly tedious. One of the major features of this project was my implementation of a cluster pruning algorithm which removes these tiny clusters by replacing them with the majority surrounding color.
 
-![[attachments/Pasted image 20250108174229.png]]
-- In this example, the orange cluster is too small and needs to be pruned. 
+!(attachments/Pasted%20image%2020250108174229.png)[attachments/Pasted%20image%2020250108174229.png]- In this example, the orange cluster is too small and needs to be pruned. 
 - First, we check all the surrounding pixel colors and see that the majority color is gray. Then, we replace the small cluster with this surrounding color to prune it from the image.
 
-![[attachments/Pasted image 20250108174349.png]]
-- An image difference of the red panda showing how many tiny clusters were removed.
+!(attachments/Pasted%20image%2020250108174349.png)[attachments/Pasted%20image%2020250108174349.png]- An image difference of the red panda showing how many tiny clusters were removed.
 
 
-![[attachments/Pasted image 20250108163531.png]]
-- Examples of a raw red panda image and its clustered and pruned variant.
+!(attachments/Pasted%20image%2020250108163531.png)[attachments/Pasted%20image%2020250108163531.png]- Examples of a raw red panda image and its clustered and pruned variant.
 
-![[attachments/Pasted image 20250108164006.png]]
-- My favorite example image of a Rainbow Eucalyptus and its clustered variant which looks like a Van Gough painting. 
+!(attachments/Pasted%20image%2020250108164006.png)[attachments/Pasted%20image%2020250108164006.png]- My favorite example image of a Rainbow Eucalyptus and its clustered variant which looks like a Van Gough painting. 
 - Although the left image is clustered, there are 147,000 different clusters which is reduced to only 2077 in the right image via my cluster pruning algorithm.
 
 
@@ -277,28 +259,23 @@ In this project, I led a small group of graduate students to implement a U-Net m
 
 When trying to generate stylized writing samples, we need a way to identify different kinds of styles so they can be categorized and trained on individually. We utilized the EMNIST dataset to obtain thousands of handwritten letters, but a major problem with this dataset is that there are no 'style' labels, only labels for which letter each sample corresponds to.
 
-![[attachments/featured.png]]
-- An example of random samples from the EMNIST handwritten letters/digits dataset. 
+!(attachments/featured.png)[attachments/featured.png]- An example of random samples from the EMNIST handwritten letters/digits dataset. 
 
 **Unsupervised Style Isolation**
 
 To isolate different styles, we utilized a variety of non-linear dimensionality reduction methods to cluster similar styles to one another and isolate different kinds of handwriting styles. Two main methods we used were ISOMAP and UMAP where we settled on UMAP due to its good style extraction results and fast reduction time.
 
-![[attachments/EAugmented500.png]]
-- A high resolution showing augmented UMAP style extractions of the letter 'e'. There are a total of 16 different 'styles' identified from the EMNIST dataset.
+!(attachments/EAugmented500.png)[attachments/EAugmented500.png]- A high resolution showing augmented UMAP style extractions of the letter 'e'. There are a total of 16 different 'styles' identified from the EMNIST dataset.
 
-![[attachments/Pasted image 20250108181353.png]]
-- A zoomed in sample between 4 different 'styles' of writing
+!(attachments/Pasted%20image%2020250108181353.png)[attachments/Pasted%20image%2020250108181353.png]- A zoomed in sample between 4 different 'styles' of writing
 
 **U-Net Diffusion Model**
 
 To generate stylized samples, we trained a U-Net diffusion model on these stylized samples and were able to produce a model that could generate different styles of writing.
 
-![[attachments/Pasted image 20250108175918.png]]
-- Example of the U-Net architecture used for generation. Samples are embedded to a latent dimensional space which is then used as the seed for generation of new samples. 
+!(attachments/Pasted%20image%2020250108175918.png)[attachments/Pasted%20image%2020250108175918.png]- Example of the U-Net architecture used for generation. Samples are embedded to a latent dimensional space which is then used as the seed for generation of new samples. 
 
-![[attachments/ep-149_w-2_nc-16_ts-500.gif]]
-- Example of different styles of the letter 'a' being generated.
+!(attachments/ep-149_w-2_nc-16_ts-500.gif)[attachments/ep-149_w-2_nc-16_ts-500.gif]- Example of different styles of the letter 'a' being generated.
 
 
 
@@ -333,8 +310,7 @@ My knowledge of relational databases was tested and applied in a semester long p
 
 As part of a final project for the course, I led a team of students to fully implement a relational database schema for MySQL designed to store information about different electric vehicles, their compatible charging stations, and traffic information around those stations to provide users estimates of charge times and availability. 
 
-![[attachments/Pasted image 20250106143928.png]]
-- The final designed schema for the project. We utilized database constraints and indexing optimizations to ensure the data remained coherent and queries were fast for location related lookups.
+!(attachments/Pasted%20image%2020250106143928.png)[attachments/Pasted%20image%2020250106143928.png]- The final designed schema for the project. We utilized database constraints and indexing optimizations to ensure the data remained coherent and queries were fast for location related lookups.
 
 ## Applied Machine Learning
 ---
@@ -355,11 +331,9 @@ The Applied Machine Learning course covered the fundamental models which are com
 
 An important part of training deep models on data where order matters is having an effective way to incorporate positional information for data samples. The positional ordering can refer to the order of words in a sentence or the order of pixels in an image, but we need an effective way to encode this information. For images, a naïve implementation would to simply give a model the x and y coordinates directly, but a more elegant solution exists by using sinusoidal positional encodings which represent an x and y coordinate in terms of sine and cosine waves which provides more normalized and contextualized representations. Below, I show the difference in how these encodings provide positional information by training a simple multi-layer perceptron on these positional encoding methods and see how the model is able to predict pixel colors.
 
-![[attachments/Learned Image ColorMLPRaw.gif]]
-- Raw positional encodings provide some information to help predict color, but information is very low resolution leading to a blurry reconstruction.
+!(attachments/Learned%20Image%20ColorMLPRaw.gif)[attachments/Learned%20Image%20ColorMLPRaw.gif]- Raw positional encodings provide some information to help predict color, but information is very low resolution leading to a blurry reconstruction.
 
-![[attachments/Learned Image ColorMLPEncoded.gif]]
-- Using sinusoidal positional encodings provides much richer and more useful positional information which can be better utilized by the model to provide a very high quality reconstruction.
+!(attachments/Learned%20Image%20ColorMLPEncoded.gif)[attachments/Learned%20Image%20ColorMLPEncoded.gif]- Using sinusoidal positional encodings provides much richer and more useful positional information which can be better utilized by the model to provide a very high quality reconstruction.
 
 ## Computer Vision
 ---
@@ -378,27 +352,21 @@ This course covered fundamentals of computer vision, including lighting, the pin
 
 Edge detectors are fairly common in image processing, however simple edge detectors often pick up on uninteresting artifacts or noise in the image that can make it harder to get useful information from images. Canny edge detection is a method to filter out noisy edges and create clean, thin edges of objects people find interesting. It utilizes frequency based filtering to remove noise from the image, a standard edge detector to generate candidate edges, and non-max suppression to make edges 1 pixel thick.
 
-![[attachments/21077.jpg]]
-- An example image we want to find canny edges in
+!(attachments/21077.jpg)[attachments/21077.jpg]- An example image we want to find canny edges in
 
-![[attachments/21077.png]]
-- Naïve edge detection with a simple edge detector, note the large amount of noise on the dirt and road caused by high frequency components.
+!(attachments/21077.png)[attachments/21077.png]- Naïve edge detection with a simple edge detector, note the large amount of noise on the dirt and road caused by high frequency components.
 
-![[attachments/21077 1.png]]
-- A canny edge image after Gaussian blurring and non-max suppression to remove noise from uninteresting edges and shrink edge boundaries down to be very thin and highly localized.
+!(attachments/21077%201.png)[attachments/21077%201.png]- A canny edge image after Gaussian blurring and non-max suppression to remove noise from uninteresting edges and shrink edge boundaries down to be very thin and highly localized.
 
 #### Panorama Stitching with RANSAC
 
 Stitching together a panorama you take with your phone is a complicated process that involves having to align many different photos to one another and stitching them together. While the process of aligning photos is easy for humans, it can be very expensive computationally for computers. To solve this problem, I implemented an algorithm which gets matching keypoints using SIFT descriptors. These candidate keypoints are then filtered with RANSAC to find a small subset of optimal candidates which are finally used to compute a homography to transform and map one image onto another.
 
-![[attachments/Pasted image 20250106125620.png]]
-- An example showing 400 keypoint descriptors and their corresponding matches between both images.
+!(attachments/Pasted%20image%2020250106125620.png)[attachments/Pasted%20image%2020250106125620.png]- An example showing 400 keypoint descriptors and their corresponding matches between both images.
 
-![[attachments/Pasted image 20250106125843.png]]
-- RANSAC filtered keypoints which produce the lowest projection error. These filtered keypoints are the best points to align for stitching.
+!(attachments/Pasted%20image%2020250106125843.png)[attachments/Pasted%20image%2020250106125843.png]- RANSAC filtered keypoints which produce the lowest projection error. These filtered keypoints are the best points to align for stitching.
 
-![[attachments/Pasted image 20250106125925.png]]
-- Resulting stitched photograph obtained by computing the transformation matrix and transforming one image onto another.
+!(attachments/Pasted%20image%2020250106125925.png)[attachments/Pasted%20image%2020250106125925.png]- Resulting stitched photograph obtained by computing the transformation matrix and transforming one image onto another.
 
 
 ## Machine Learning for Signal Processing
@@ -419,30 +387,23 @@ Machine Learning for Signal Processing provided a deep look at the different kin
 
 Dimensionality reduction is an important part of machine learning, as our data may be able to be represented in a more compact way or the process of compressing it can reveal insight about how it is "structured". ISOMAP is an example of a non-linear dimensionality reduction method which reduces the dimensionality of data while preserving the "geodesic distance" between samples. This geodesic distance refers to the distance between points along a manifold which is a complex structure in higher dimensions that data can lie. I wrote my own ISOMAP implementation which projects handwritten 6's into 2 dimensions represented by the x and y coordinates of that sample in the image below. 
 
-![[attachments/Pasted image 20250105170638.png]]
-- An example of ISOMAP projected handwritten 6's. Note how similar "styles" of 6's are grouped together. The further left samples lean left and the further right samples lean right. Samples towards the top are skinny while samples toward the bottom are thicker. 
+!(attachments/Pasted%20image%2020250105170638.png)[attachments/Pasted%20image%2020250105170638.png]- An example of ISOMAP projected handwritten 6's. Note how similar "styles" of 6's are grouped together. The further left samples lean left and the further right samples lean right. Samples towards the top are skinny while samples toward the bottom are thicker. 
 
-![[attachments/Pasted image 20250107210142.png]]
-- The image above shows a manifold of a ribbon shape where our data lies in higher dimensions. The geodesic distance between A and B isn't a straight line, but the shortest path along this manifold which travels across good samples. In the example of handwritten 6's, travelling a path along this manifold is analogous to slowly changing the writing style of 6's.
+!(attachments/Pasted%20image%2020250107210142.png)[attachments/Pasted%20image%2020250107210142.png]- The image above shows a manifold of a ribbon shape where our data lies in higher dimensions. The geodesic distance between A and B isn't a straight line, but the shortest path along this manifold which travels across good samples. In the example of handwritten 6's, travelling a path along this manifold is analogous to slowly changing the writing style of 6's.
 
 #### Satellite Imagery Pool Detector
 
 An interesting application of machine learning was done by the French government to [detect undeclared swimming pools](https://www.theverge.com/2022/8/30/23328442/france-ai-swimming-pool-tax-aerial-photos) for tax purposes. To try and solve this niche problem myself, I fully implemented a Support Vector Machine (SVM) solution from scratch in pure python to analyze any satellite image and identify pools. I collected my own training and test datasets by selecting appropriate "pool" or "not pool" image patches, then trained and evaluated an SVM on them to highlight pools in an image.
 
-![[attachments/Pasted image 20250105171626.png]]
-- Example test image with 16 pools with different lighting conditions, surroundings, shapes and sizes.
+!(attachments/Pasted%20image%2020250105171626.png)[attachments/Pasted%20image%2020250105171626.png]- Example test image with 16 pools with different lighting conditions, surroundings, shapes and sizes.
 
-![[attachments/Pasted image 20250105171741.png]]
-- Pool examples used in the training set.
+!(attachments/Pasted%20image%2020250105171741.png)[attachments/Pasted%20image%2020250105171741.png]- Pool examples used in the training set.
 
-![[attachments/Pasted image 20250105171746.png]]
-- Non-pool examples.
+!(attachments/Pasted%20image%2020250105171746.png)[attachments/Pasted%20image%2020250105171746.png]- Non-pool examples.
 
-![[attachments/Pasted image 20250105172226.png]]
-- Running the SVM on a sample image involved taking all 7x7 image patches and checking how "confident" the model was a given patch had a pool in it. Raw SVM activations when run on the test image (left) and filtered activations in preparation to remove noise from false positives (right).
+!(attachments/Pasted%20image%2020250105172226.png)[attachments/Pasted%20image%2020250105172226.png]- Running the SVM on a sample image involved taking all 7x7 image patches and checking how "confident" the model was a given patch had a pool in it. Raw SVM activations when run on the test image (left) and filtered activations in preparation to remove noise from false positives (right).
 
-![[attachments/Pasted image 20250105172230.png]]
-- The original test image with fully processed activations on the right showing where suspected pools are in the image. 15/16 pools identified with 1 false positive in the top right. 
+!(attachments/Pasted%20image%2020250105172230.png)[attachments/Pasted%20image%2020250105172230.png]- The original test image with fully processed activations on the right showing where suspected pools are in the image. 15/16 pools identified with 1 false positive in the top right. 
 
 ## Deep Learning for Computer Vision
 ---
@@ -464,27 +425,22 @@ I applied my knowledge by implementing many popular computer vision models from 
 
 I implemented a variety of historical and modern model architectures with the supporting infrastructure for effective training using the PyTorch library in python. Implemented models include variations of convolutional neural networks like [ResNet](https://arxiv.org/abs/1512.03385), [U-Net](https://paperswithcode.com/method/u-net), and [R-CNN](https://arxiv.org/abs/1311.2524) as well as transformer-based models like [ViT](https://arxiv.org/abs/2010.11929). 
 
-![[attachments/0_aG_s3DT2Tg1GVtaM.png]]
-- Example architecture of a region proposal network where I implemented key features like non-max suppression to eliminate duplicate regions and ROI pooling which extracts and maps feature maps for a given region in the original image.
+!(attachments/0_aG_s3DT2Tg1GVtaM.png)[attachments/0_aG_s3DT2Tg1GVtaM.png]- Example architecture of a region proposal network where I implemented key features like non-max suppression to eliminate duplicate regions and ROI pooling which extracts and maps feature maps for a given region in the original image.
 
-![[attachments/vision-transformer-vit.png]]
-- The Vision Transformer architecture from the original ViT paper. I implemented many key portions of this architecture myself, like the multi-head attention blocks, residual connections, and patch embeddings.
+!(attachments/vision-transformer-vit.png)[attachments/vision-transformer-vit.png]- The Vision Transformer architecture from the original ViT paper. I implemented many key portions of this architecture myself, like the multi-head attention blocks, residual connections, and patch embeddings.
 
 #### ResNet Fine Tuning
 
 Fine-tuned the popular ResNet architecture on custom animals dataset with 10 classes of different kinds of animals and ~800 examples per class. Utilized advanced learning rate schedulers like plateau scheduling and cyclic scheduling to maximize performance. Tied for 4th in course leaderboard of 84 students for model accuracy.
 
-![[attachments/ResNet.png]]
-- The ResNet backbone model fine tuned with cyclic and plateau learning rate schedulers.
+!(attachments/ResNet.png)[attachments/ResNet.png]- The ResNet backbone model fine tuned with cyclic and plateau learning rate schedulers.
 
 Fine tuning large models on relatively small datasets is a fairly common practice in machine learning, and one of the main parameters to manage for the fine tuning process is the learning rate which determines how much the model should adjust its weights when seeing new examples. Too small and training takes forever, too large and the model overcorrects for new training examples which harms performance.
 
 
-![[attachments/1_2URpGDr5a9aJ1YuA7OaTKg.png]]
-- Cyclic learning rates come in a variety of forms, but often involve cycling from a low to a high learning rate to escape local optima in the loss landscape with optional global decay.
+!(attachments/1_2URpGDr5a9aJ1YuA7OaTKg.png)[attachments/1_2URpGDr5a9aJ1YuA7OaTKg.png]- Cyclic learning rates come in a variety of forms, but often involve cycling from a low to a high learning rate to escape local optima in the loss landscape with optional global decay.
 
-![[attachments/snimok-ekrana-1382.webp]]
-- Plateau learning rate schedulers are adaptive in that they wait until no further improvements are seen on a given validation metric before reducing the learning rate further.
+!(attachments/snimok-ekrana-1382.webp)[attachments/snimok-ekrana-1382.webp]- Plateau learning rate schedulers are adaptive in that they wait until no further improvements are seen on a given validation metric before reducing the learning rate further.
 
 ## Computational Photography
 ---
@@ -505,15 +461,12 @@ Computation Photography gave me both the knowledge and experience needed to unde
 We can synthesize larger textures of repeating patterns like bricks by sampling similar random patches from a sample texture and stitching them together in a seamless way. This lets us extend any texture to be as large as we want while still keeping important parts of the image (like the bricks below) coherent and aligned when compared to naïve methods like random quilting.
 
 
-![[attachments/Pasted image 20250105155319.png]]
-- A 200x200 brick wall sample texture that we want to extend
+!(attachments/Pasted%20image%2020250105155319.png)[attachments/Pasted%20image%2020250105155319.png]- A 200x200 brick wall sample texture that we want to extend
 
-![[attachments/Pasted image 20250105161903.png]]
-- If we instead find similar looking patches, we can cut them along a mostly seamless line which lets us stitch them together without any noticeable edges.
+!(attachments/Pasted%20image%2020250105161903.png)[attachments/Pasted%20image%2020250105161903.png]- If we instead find similar looking patches, we can cut them along a mostly seamless line which lets us stitch them together without any noticeable edges.
 
 
-![[attachments/Pasted image 20250105155400.png]]
-- An expanded 400x400 synthesized texture using image quilting and smart stitching.
+!(attachments/Pasted%20image%2020250105155400.png)[attachments/Pasted%20image%2020250105155400.png]- An expanded 400x400 synthesized texture using image quilting and smart stitching.
 
 
 #### Texture Transfer
@@ -521,14 +474,11 @@ We can synthesize larger textures of repeating patterns like bricks by sampling 
 We can take an existing texture and apply it to a new image to make it appear as if that image were formed using that texture. Below, I have a sample rust image and a picture of Barrack Obama that I want to apply it to. The end result is a picture of Obama that looks as if it were made of rust.
 
 
-![[attachments/rust.jpg]]
-- Sample rust texture we want to apply
+!(attachments/rust.jpg)[attachments/rust.jpg]- Sample rust texture we want to apply
 
-![[attachments/obama.jpg]]
-- Guidance image for texture transfer
+!(attachments/obama.jpg)[attachments/obama.jpg]- Guidance image for texture transfer
 
-![[attachments/Pasted image 20250105155911.png]]
-- Generated image with new texture
+!(attachments/Pasted%20image%2020250105155911.png)[attachments/Pasted%20image%2020250105155911.png]- Generated image with new texture
 
 
 ## Real-World Algorithms for IoT & Data Science
@@ -550,28 +500,21 @@ I applied my knowledge in various realistic engineering settings where I was giv
 
 Given an audio recording with multiple speakers, I implemented the DUET algorithm which is capable of separating individual speakers by using multiple microphones. DUET accomplishes this by utilizing the time difference between when a speaker's voice reaches a microphone to identify which time-frequency bins of a spectrogram correspond to a given speaker.
 
-![[attachments/Pasted image 20250105202608.png]]
-- A spectrogram of 3 speakers talking separately from different locations in a room. 
+!(attachments/Pasted%20image%2020250105202608.png)[attachments/Pasted%20image%2020250105202608.png]- A spectrogram of 3 speakers talking separately from different locations in a room. 
 
-![[attachments/Pasted image 20250105202644.png]]
-- Recovered time delays between different speakers. We perform K Means clustering on the samples and obtain a set of 3 distinct clusters corresponding to the 3 different speakers which can be used to isolate each person's voice.
+!(attachments/Pasted%20image%2020250105202644.png)[attachments/Pasted%20image%2020250105202644.png]- Recovered time delays between different speakers. We perform K Means clustering on the samples and obtain a set of 3 distinct clusters corresponding to the 3 different speakers which can be used to isolate each person's voice.
 
 
-![[attachments/Pasted image 20250105202741.png]]
-![[attachments/Pasted image 20250105202750.png]]
-![[attachments/Pasted image 20250105202756.png]]
-- The 3 separated voices based on the cluster findings. Note how each speaker's voice is isolated in the spectrogram representation except for inaudible noise in the higher frequency ranges and constant energy in the very low frequencies. 
+!(attachments/Pasted%20image%2020250105202741.png)[attachments/Pasted%20image%2020250105202741.png]!(attachments/Pasted%20image%2020250105202750.png)[attachments/Pasted%20image%2020250105202750.png]!(attachments/Pasted%20image%2020250105202756.png)[attachments/Pasted%20image%2020250105202756.png]- The 3 separated voices based on the cluster findings. Note how each speaker's voice is isolated in the spectrogram representation except for inaudible noise in the higher frequency ranges and constant energy in the very low frequencies. 
 
 #### Pedestrian Dead Reckoning
 
 Given accelerometer data from a phone or smart device, implemented a simple algorithm capable of estimating someone's position by deriving someone's steps from the raw sensor data, their step size, and walking direction.
 
 
-![[attachments/Pasted image 20250105210738.png]]
-- Raw accelerometer data in the x, y, and z directions.
+!(attachments/Pasted%20image%2020250105210738.png)[attachments/Pasted%20image%2020250105210738.png]- Raw accelerometer data in the x, y, and z directions.
 
-![[attachments/Pasted image 20250105210802.png]]
-- Frequency-filtered accelerometer magnitudes and estimated step times shown in orange. These step timings can be combined with walking direction at a given time and someone's average step size to track their location over time.
+!(attachments/Pasted%20image%2020250105210802.png)[attachments/Pasted%20image%2020250105210802.png]- Frequency-filtered accelerometer magnitudes and estimated step times shown in orange. These step timings can be combined with walking direction at a given time and someone's average step size to track their location over time.
 
 ## Generative AI
 ---
