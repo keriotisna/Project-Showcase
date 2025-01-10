@@ -4,6 +4,8 @@
 
 I'm a recent graduate of UIUC's MCS Master's program of Computer Science with a keen interest in software development with a focus in data-heavy fields like machine learning, data science, and database systems. Throughout my education, I've gained a variety of skills and experiences that bolstered my software development, leadership, and presentation skills that enable me to tackle even the toughest challenges.
 
+Check out some of the [projects](projects-showcase) I've done and the [courses](courses) I've taken at UIUC below!
+
 # Projects Showcase
 ---
 
@@ -13,6 +15,9 @@ During my time at UIUC, I had the opportunity to lead several different projects
 
 - [Electric Vehicle Trip Planner](#electric-vehicle-trip-planner)
 - [Explainable Real vs GAN Face Discrimination](#explainable-real-vs-gan-face-discrimination)
+- [CIFAR-10 Benchmarking](cifar-10-benchmarking)
+- [Paint by Numbers Generator](paint-by-numbers-generator)
+- [Stylized Handwriting Generation](stylized-handwriting-generation)
 
 
 ## Electric Vehicle Trip Planner
@@ -23,7 +28,7 @@ During my time at UIUC, I had the opportunity to lead several different projects
 > - Fully implemented an application backend with CRUD functionality to connect to the database and execute queries with correct isolation levels and connection management.
 > - Optimized database schema and indexing to provide query cost reductions of 30x for location based queries. 
 
-GitHub Repository
+GitHub Repository:
 https://github.com/cs411-alawini/fa24-cs411-team087-2AndAHalfAsians
 
 In this project, I led a team of students to implement an electric vehicle trip planner centered around a MySQL database. The project's overall goal was to provide users an easy way to compare and contrast different electric vehicles for trip viability by giving users an intuitive way to visualize things like charger availability, charging costs, and potential traffic in the vicinity of charging stations. 
@@ -163,7 +168,7 @@ DELIMITER ;
 > - Implemented custom and industry standard architectures like SWIN and ViT using PyTorch and analyzed results to contrast performance between models.
 > - Visualized important image features with GradCAM library to understand a model's thought process.
 
-GitHub Repository
+GitHub Repository:
 https://github.com/MarkBauer5/3-best-friends
 
 ![attachments/Pasted%20image%2020250108152359.png](attachments/Pasted%20image%2020250108152359.png)
@@ -198,7 +203,7 @@ To achieve our goals for this project, we tested several custom and pre-defined 
 > - Benchmarked several model architectures using PyTorch on the CIFAR-10 dataset and showed that effective data augmentation is highly useful in reducing model variance.
 > - Provided 40x training speedup by parallelizing model training and data augmentations to maximize hardware utilization.
 
-GitHub Repository
+GitHub Repository:
 https://github.com/keriotisna/CS-444-Final-Project
 
 In this project, I implemented a variety of custom model architectures and benchmarked their performance on the popular CIFAR-10 dataset which is a 10-way classification dataset on low resolution 32x32 images. This was actually my first project involving computer vision models, but I had enough general knowledge of deep learning theory and PyTorch to try implementing my own architectures to see how they would perform under different data augmentation regimes. Some architectures I implemented include bottleneck blocks and my own custom branch blocks. In addition to model experimentation, I also performed a substantial amount of hyperparameter searching, including trying different optimizer hyperparameters as well as a variety of different data augmentation techniques.
@@ -223,7 +228,7 @@ In this project, I implemented a variety of custom model architectures and bench
 > - Implemented several critical backend functions that generate the paint by numbers image including edge filtering and clustering.
 > - Implemented a cluster pruning algorithm that reduces the number of individual clusters by up to 99% leading to a better completion experience.
 
-GitHub Repository
+GitHub Repository:
 https://github.com/ethan-grinberg/paint-by-number
 
 A Paint by Numbers (PBN) is a type of coloring activity where someone is given a black and white image with outlines and a key indicating which colors go where. While these can be fun to do, it can be hard to find good pieces to do them on. In this project, I worked with a team of 2 other students to automate the PBN generation process using several image processing techniques in python. My role in this project focused on the core backend algorithms which would generate these PBN images which are described in more detail below.
@@ -276,7 +281,7 @@ After clustering and quantizing our image to a few different colors, we still ha
 > - Led team of graduate students to implement a stylized handwriting generation model. 
 > - Utilized advanced dimensionality reduction techniques like UMAP and ISOMAP to extract stylized samples.
 
-GitHub Repository
+GitHub Repository:
 https://github.com/keriotisna/CS598-GenerativeAI-Final-Project
 
 In this project, I led a small group of graduate students to implement a U-Net model architecture to generate stylized handwriting samples. Our final architecture was based on a diffusion U-Net which was based on convolutional network layers. Our final model is able to generate stylized samples of individual letters and can be fine-tuned to mimic a specific handwriting style.
@@ -315,6 +320,18 @@ To generate stylized samples, we trained a U-Net diffusion model on these styliz
 ---
 
 Below, I've included a list of interesting courses I took at UIUC and some examples of the cool stuff I got to do. Since some of these projects are based on assignments done in class, I can't always include source code for academic integrity purposes, but I can show off some interesting parts of each project. 
+
+**Courses List**
+
+- [Database Systems](database-systems)
+- [Applied Machine Learning](applied-machine-learning)
+- [Computer Vision](computer-vision)
+- [Machine Learning for Signal Processing](machine-learning-for-signal-processing)
+- [Deep Learning for Computer Vision](deep-learning-for-computer-vision)
+- [Computational Photography](computational-photography)
+- [Real-World Algorithms for IoT & Data Science](real-world-algorithms-for-iot-data-science)
+- [Generative AI](generative-ai)
+- [Data Mining](data-mining)
 
 ## Database Systems
 ---
