@@ -1,4 +1,3 @@
-
 # About Me
 ---
 
@@ -23,10 +22,12 @@ During my time at UIUC, I had the opportunity to lead several different projects
 ## Electric Vehicle Trip Planner
 ---
 
-> [!NOTE] Project Overview
-> - Designed, normalized, and fully implemented MySQL database with advanced queries and features like indexing, constraints, stored procedures, and triggers.
-> - Fully implemented an application backend with CRUD functionality to connect to the database and execute queries with correct isolation levels and connection management.
-> - Optimized database schema and indexing to provide query cost reductions of 30x for location based queries. 
+
+
+**Project Overview**
+- Designed, normalized, and fully implemented MySQL database with advanced queries and features like indexing, constraints, stored procedures, and triggers.
+- Fully implemented an application backend with CRUD functionality to connect to the database and execute queries with correct isolation levels and connection management.
+- Optimized database schema and indexing to provide query cost reductions of 30x for location based queries. 
 
 GitHub Repository:
 https://github.com/cs411-alawini/fa24-cs411-team087-2AndAHalfAsians
@@ -163,10 +164,10 @@ DELIMITER ;
 ## Explainable Real vs GAN Face Discrimination
 ---
 
-> [!NOTE] Project Overview
-> - Led a team of graduate students to help identify deep-fake images with deep learning models with nearly 97% accuracy on unseen data.
-> - Implemented custom and industry standard architectures like SWIN and ViT using PyTorch and analyzed results to contrast performance between models.
-> - Visualized important image features with GradCAM library to understand a model's thought process.
+**Project Overview**
+- Led a team of graduate students to help identify deep-fake images with deep learning models with nearly 97% accuracy on unseen data.
+- Implemented custom and industry standard architectures like SWIN and ViT using PyTorch and analyzed results to contrast performance between models.
+- Visualized important image features with GradCAM library to understand a model's thought process.
 
 GitHub Repository:
 https://github.com/MarkBauer5/3-best-friends
@@ -199,9 +200,9 @@ To achieve our goals for this project, we tested several custom and pre-defined 
 ## CIFAR-10 Benchmarking 
 ---
 
-> [!NOTE] Project Overview
-> - Benchmarked several model architectures using PyTorch on the CIFAR-10 dataset and showed that effective data augmentation is highly useful in reducing model variance.
-> - Provided 40x training speedup by parallelizing model training and data augmentations to maximize hardware utilization.
+**Project Overview**
+- Benchmarked several model architectures using PyTorch on the CIFAR-10 dataset and showed that effective data augmentation is highly useful in reducing model variance.
+- Provided 40x training speedup by parallelizing model training and data augmentations to maximize hardware utilization.
 
 GitHub Repository:
 https://github.com/keriotisna/CS-444-Final-Project
@@ -223,10 +224,10 @@ In this project, I implemented a variety of custom model architectures and bench
 ## Paint by Numbers Generator
 ---
 
-> [!NOTE] Project Overview
-> - Worked with team of students to implement a Paint by Numbers generator that creates a coloring image for any input image.
-> - Implemented several critical backend functions that generate the paint by numbers image including edge filtering and clustering.
-> - Implemented a cluster pruning algorithm that reduces the number of individual clusters by up to 99% leading to a better completion experience.
+**Project Overview**
+- Worked with team of students to implement a Paint by Numbers generator that creates a coloring image for any input image.
+- Implemented several critical backend functions that generate the paint by numbers image including edge filtering and clustering.
+- Implemented a cluster pruning algorithm that reduces the number of individual clusters by up to 99% leading to a better completion experience.
 
 GitHub Repository:
 https://github.com/ethan-grinberg/paint-by-number
@@ -277,9 +278,9 @@ After clustering and quantizing our image to a few different colors, we still ha
 ## Stylized Handwriting Generation
 ---
 
-> [!NOTE] Project Overview
-> - Led team of graduate students to implement a stylized handwriting generation model. 
-> - Utilized advanced dimensionality reduction techniques like UMAP and ISOMAP to extract stylized samples.
+**Project Overview**
+- Led team of graduate students to implement a stylized handwriting generation model. 
+- Utilized advanced dimensionality reduction techniques like UMAP and ISOMAP to extract stylized samples.
 
 GitHub Repository:
 https://github.com/keriotisna/CS598-GenerativeAI-Final-Project
@@ -336,11 +337,10 @@ Below, I've included a list of interesting courses I took at UIUC and some examp
 ## Database Systems
 ---
 
-> [!NOTE] Course Overview
-> 
-> - Provided a comprehensive understanding of MySQL relational database queries, schemas, normalization, transactions, and indexing.
-> - Applied optimizations and design considerations for relational database schema creation while considering tradeoffs of normalization and isolation levels.
-> - Introduced document and graph databases systems through MongoDB and Neo4j as well as their tradeoffs when compared to relational databases.
+**Course Overview**
+- Provided a comprehensive understanding of MySQL relational database queries, schemas, normalization, transactions, and indexing.
+- Applied optimizations and design considerations for relational database schema creation while considering tradeoffs of normalization and isolation levels.
+- Introduced document and graph databases systems through MongoDB and Neo4j as well as their tradeoffs when compared to relational databases.
 
 **Detailed Course Description**
 
@@ -362,11 +362,11 @@ As part of a final project for the course, I led a team of students to fully imp
 ## Applied Machine Learning
 ---
 
-> [!NOTE] Course Overview
-> 
-> - Mastered fundamental machine learning models and concepts for effective training, data preparation, analysis, and presentation. 
-> - Studied supporting theory for many common machine learning models and how to effectively train and employ them. 
-> - Applied different machine learning models to real datasets for classification and regression tasks with high accuracy. 
+**Course Overview**
+
+- Mastered fundamental machine learning models and concepts for effective training, data preparation, analysis, and presentation. 
+- Studied supporting theory for many common machine learning models and how to effectively train and employ them. 
+- Applied different machine learning models to real datasets for classification and regression tasks with high accuracy. 
 
 **Detailed Course Description**
 
@@ -387,9 +387,9 @@ An important part of training deep models on data where order matters is having 
 ## Computer Vision
 ---
 
-> [!NOTE] Course Overview
-> - Covered image processing fundamentals like frequency filtering, canny edge & corner detection, SIFT, and 3D reconstruction.
-> - Implemented algorithms for panorama construction, keypoint matching, and semantic segmentation of images. 
+**Course Overview**
+- Covered image processing fundamentals like frequency filtering, canny edge & corner detection, SIFT, and 3D reconstruction.
+- Implemented algorithms for panorama construction, keypoint matching, and semantic segmentation of images. 
 
 **Detailed Course Description**
 
@@ -427,10 +427,10 @@ Stitching together a panorama you take with your phone is a complicated process 
 ## Machine Learning for Signal Processing
 ---
 
-> [!NOTE] Course Overview
-> 
-> - Introduced advanced machine learning models for signal processing and analysis including dimensionality reduction techniques, smart clustering methods, and classifiers.
-> - Solved a variety of audio and image classification problems by engineering effective models and effective hyperparameter tuning.
+**Course Overview**
+
+- Introduced advanced machine learning models for signal processing and analysis including dimensionality reduction techniques, smart clustering methods, and classifiers.
+- Solved a variety of audio and image classification problems by engineering effective models and effective hyperparameter tuning.
 
 **Detailed Course Description**
 
@@ -470,10 +470,10 @@ An interesting application of machine learning was done by the French government
 ## Deep Learning for Computer Vision
 ---
 
-> [!NOTE] Course Overview
-> - Provided a strong theoretical background for full model training pipeline: designing, implementing, training, and evaluating deep learning models for image-related problems.
-> - Solved classification and localization problems by working with large scale image datasets and designing deep model architectures in PyTorch. 
-> - Implemented advanced model training techniques like learning rate schedulers, data augmentations, and regularization methods.
+**Course Overview**
+- Provided a strong theoretical background for full model training pipeline: designing, implementing, training, and evaluating deep learning models for image-related problems.
+- Solved classification and localization problems by working with large scale image datasets and designing deep model architectures in PyTorch. 
+- Implemented advanced model training techniques like learning rate schedulers, data augmentations, and regularization methods.
 
 **Detailed Course Description**
 
@@ -512,10 +512,10 @@ Fine tuning large models on relatively small datasets is a fairly common practic
 ## Computational Photography
 ---
 
-> [!NOTE] Course Overview
-> - Covered advanced commercial image processing techniques for realistic blending, smart image segmentation, and other advanced image editing algorithms.
-> - Implemented a variety of image processing techniques with common python image libraries like `numpy` and `cv2`.
-> - Learned how large-scale image datasets can be utilized in machine learning and efficient lookup settings for image completion or 3D reconstruction.
+**Course Overview**
+- Covered advanced commercial image processing techniques for realistic blending, smart image segmentation, and other advanced image editing algorithms.
+- Implemented a variety of image processing techniques with common python image libraries like `numpy` and `cv2`.
+- Learned how large-scale image datasets can be utilized in machine learning and efficient lookup settings for image completion or 3D reconstruction.
 
 **Detailed Course Description**
 
@@ -557,9 +557,9 @@ We can take an existing texture and apply it to a new image to make it appear as
 ## Real-World Algorithms for IoT & Data Science
 ---
 
-> [!NOTE] Course Overview
-> - Gained a deep intuition for several data science & real-time algorithms like PCA, SVD and Fourier Transforms from foundational statistics and linear algebra. 
-> - Solved a variety of engineering problems like pedestrian localization, audio source separation, and signal localization by engineering solutions from scratch. 
+**Course Overview**
+- Gained a deep intuition for several data science & real-time algorithms like PCA, SVD and Fourier Transforms from foundational statistics and linear algebra. 
+- Solved a variety of engineering problems like pedestrian localization, audio source separation, and signal localization by engineering solutions from scratch. 
 
 **Detailed Course Description**
 
@@ -599,10 +599,10 @@ Given accelerometer data from a phone or smart device, implemented a simple algo
 ## Generative AI
 ---
 
-> [!NOTE] Course Overview
-> 
-> - Learned a variety of basic and advanced generative model architectures and the mathematical principals behind them.
-> - Covered various popular research papers for generative models and discussed their applications and theory behind their implementations.
+**Course Overview**
+
+- Learned a variety of basic and advanced generative model architectures and the mathematical principals behind them.
+- Covered various popular research papers for generative models and discussed their applications and theory behind their implementations.
 
 **Detailed Course Description**
 
@@ -611,11 +611,11 @@ A rigorous course in the mathematics behind generative models for both images an
 ## Data Mining
 ---
 
-> [!NOTE] Course Overview
-> 
-> - Learned a variety of pattern mining techniques to extract frequent patterns from tabular and sequential databases.
-> - Implemented machine learning models like random forests and regression models to extract useful information from raw data.
-> - Applied robust evaluation metrics for machine learning models to prevent misleading conclusions. 
+**Course Overview**
+
+- Learned a variety of pattern mining techniques to extract frequent patterns from tabular and sequential databases.
+- Implemented machine learning models like random forests and regression models to extract useful information from raw data.
+- Applied robust evaluation metrics for machine learning models to prevent misleading conclusions. 
 
 **Detailed Course Description**
 
